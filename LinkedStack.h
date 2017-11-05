@@ -22,8 +22,9 @@ struct node {
 template<class T>
 class LinkedStack {
 
-
-    node<T> *top;//pointer to object at the top of the stack, LIFO
+private:
+    
+    node<T> *top; //pointer to object at the top of the stack, LIFO
 
 public:
     //provide function prototypes for a Stack here
@@ -37,12 +38,10 @@ public:
 
     bool isEmpty();
 
-
     virtual ~LinkedStack();
 
 };
 //provide function implementations here
-
 
 /*
  * Constructs a LinkedStack, sets top pointer to point to NULL
